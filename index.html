@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo-List</title>
+        <link href="styles.css" rel="stylesheet" >
+    </head>
+
+    <body>
+
+        <div class="side_bar">
+            
+            <h3>Georgio's ToDo-List</h3>
+            <hr>
+        
+        </div>
+        
+            
+        <div class="main_container">
+            
+            <H1>Georgio's ToDo-List</H1>
+            
+            
+            <div class="container">
+
+
+                <section id="add_todo">
+
+                    <div class="labels">
+                
+                        <div class="title">
+
+                            <input placeholder="Add Title" class="title" id="title">
+
+                        </div>
+
+                        <div class="importance">
+
+                            <input type="range" min="1" max="5" value="1">
+
+                        </div>
+            
+                    </div>
+
+                    <div class="write_and_add">
+                
+                        <textarea id="todo_content" type="text">Add a Task Here</textarea>
+                
+                        <button class="add">Add</button>
+
+                    </div>
+                
+                </section>
+        
+
+                <section class="todo_list">
+                    
+                    <table id="list_of_Todo">
+
+                        <tr class="todo">
+                            <td>
+
+                                <div class="labels">
+                    
+                                    <div class="title">
+
+                                        <p placeholder="Title" class="title"> </p>
+            
+                                    </div>
+                                    
+            
+                                    <div class="importance">      
+                                        
+                                    </div>
+                        
+                                </div>
+
+                                <p id="todo_content" type="text" ></p>
+                            </td>
+                            <td>
+                                <button class="done">Done</button>
+
+                            </td>
+
+                        </tr>
+                    </table>
+
+                </section>
+        
+            </div> 
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="todo.js"></script>
+    </body> 
+</html>
