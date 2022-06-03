@@ -12,8 +12,11 @@
 
         <div class="side_bar">
             
-            <h3>Georgio's ToDo-List</h3>
+            <h3>Completed Tasks</h3>
             <hr>
+            <ul id="completed_tasks">
+                <li>Completed Task</li>    
+            </ul>
         
         </div>
         
@@ -38,7 +41,7 @@
 
                         <div class="importance">
 
-                            <input type="range" min="1" max="5" value="1">
+                            <input type="range" min="1" max="5" value="1" id="importance_input">
 
                         </div>
             
@@ -48,7 +51,7 @@
                 
                         <textarea id="todo_content" type="text">Add a Task Here</textarea>
                 
-                        <button class="add">Add</button>
+                        <button class="add" id="add_button">Add</button>
 
                     </div>
                 
